@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './App.css';
-import InputField from './InputField';
-import BillBreakdown from './BillBreakdown';
+import React, { useState } from "react";
+import "./App.css";
+import InputField from "./InputField";
+import BillBreakdown from "./BillBreakdown";
 
 function App() {
   const [units, setUnits] = useState(0); // Define units state
@@ -16,8 +16,12 @@ function App() {
     const remainingUnitsCost = remainingUnits * 5.2;
     const total = first50UnitsCost + next100UnitsCost + remainingUnitsCost;
 
-    setUnits(inputUnits); // Update units state
-    setTotalPayable(total);
+    setUnits(() => {
+      return inputUnits;
+    });
+    setTotalPayable(() => {
+      return total;
+    });
   };
 
   return (
