@@ -1,0 +1,46 @@
+* {
+    margin: 40;
+    padding: 5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  nav {
+    border-bottom: 2px solid black;
+    padding-top: 2rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li {
+    width: 100px;
+    border: 2px solid black;
+    text-align: center;
+    translate: 0 2px;
+  }
+  
+  .active {
+    border-bottom: 4px solid white;
+    translate: 0 2px;
+    background: rgb(179, 243, 188);
+    
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+   
+  }
+
+  body{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-teacher-s-college-classroom-coaching-course-poster-background-image_188494.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 1360px 650px;
+    
+  }

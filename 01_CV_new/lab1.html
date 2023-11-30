@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - CV</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            /* This is important to hide overflow on smaller screens */
+        }
+
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .video-text {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .row {
+            margin: 30px 0;
+        }
+
+        .col-md-6 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-text">
+            <h1>Siddesh Khaple</h1>
+            <p>Web Developer</p>
+        </div>
+    </header>
+
+    <section class="row">
+        <!-- Left Column (Personal Info) -->
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2>Contact Information</h2>
+                    <p>Email: siddeshkhaple@email.com</p>
+                    <p>Phone: 9156002278</p>
+                    <!-- <p>Website: <a href="https://www.example.com">www.example.com</a></p> -->
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Bootstrap, jQuery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column (Work Experience & Education) -->
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2>Projects</h2>
+                    <p><strong>RedRevive - Menstrual Health Prediction</strong> </p>
+                    <p>2023</p>
+                    <ul>
+                        <li>A machine learning project using algorithms aims to provide
+                            personalized insights and predictions for better menstrual health
+                            management</li>
+                        <!-- <li>Collaborated with cross-functional teams on various projects.</li> -->
+                        <!-- Add more work experience details here -->
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <!-- <h2>Projects</h2> -->
+                    <p><strong>Smart Soldier Jacket</strong> </p>
+                    <p>2022</p>
+                    <ul>
+                        <li>IOT based project a multifuntional jacket for the indian army used in
+                            the extreme weather conditions. Also detect the position and
+                            orientation of soldiers along with latitude and longitude.</li>
+                        <!-- <li>Collaborated with cross-functional teams on various projects.</li> -->
+                        <!-- Add more work experience details here -->
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2>Education</h2>
+                    <p><strong>Bachelor Of Technology in Computer
+                            Engineering</strong></p>
+                    <p>Vishwakarma Institute Of Technology</p>
+                    <p>2021-2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+      
+            $('a').on('click', function (e) {
+                if (this.hash !== '') {
+                    e.preventDefault();
+
+                    const hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
